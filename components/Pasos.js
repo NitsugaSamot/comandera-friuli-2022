@@ -23,7 +23,7 @@ const Pasos = () => {
 
   return (
     <>
-        <div className="flex justify-between mb-5">{pasos.map(paso => (
+        <div className="flex justify-between mb-5 bg-transparent">{pasos.map(paso => (
             <button 
             onClick={() => {
                 router.push(paso.url)

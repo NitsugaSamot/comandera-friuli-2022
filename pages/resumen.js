@@ -1,6 +1,6 @@
 import Layout from "../layout/Layout"
 import useComandera from "../hooks/useComandera"
-import ResumenProducto from "../components/ResumenProducto"
+import ResumenProducto from "../components/ResumenProducto.js"
 
 export default function Resumen() {
     const {pedido} = useComandera()

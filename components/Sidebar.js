@@ -8,7 +8,12 @@ const Sidebar = () => {
 
   return (
     <>
-        <Image width={300} height={350} src="/assets/img/logo.jpeg" alt="imagen logo"/>
+        <Image 
+            width={300} 
+            height={200} 
+            src="/assets/img/logo.jpeg" 
+            alt="imagen logo"
+        />
 
 
         <nav className="mt-10">
@@ -21,8 +26,6 @@ const Sidebar = () => {
         </nav>
         
     </>
-
-
   )
 }
 

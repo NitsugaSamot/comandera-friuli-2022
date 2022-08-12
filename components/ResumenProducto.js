@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { formatearDinero } from '../helpers'
 import useComandera from '../hooks/useComandera'
 
@@ -7,7 +8,19 @@ const ResumenProducto = ({producto}) => {
 
   return (
     <div className="shadow p-5 mb-3 flex gap-10 items-center">
+
         <div className="md:w-1/6">
+                <Image className='items-center'
+                    width={300}
+                    height={300}
+                    alt={`Imagen producto ${producto.nombre}`}
+                    src={`/assets/img/${producto.imagen}.jpg`}
+                />
+        </div>
+
+
+        <div className="md:w-4/6">
+
             <p className="text-3xl font-bold">{producto.nombre}</p>
             <p className="text-xl font-bold mt-2">Cantidad: {producto.cantidad}</p>
             <p className="text-xl font-bold text-green-700 mt-2">Precio: {formatearDinero(producto.precio)}</p>

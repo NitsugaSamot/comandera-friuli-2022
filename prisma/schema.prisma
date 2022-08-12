@@ -13,7 +13,7 @@ datasource db {
 model Producto {
   id Int @id @default(autoincrement())
   nombre String
-  precio Float
+  precio Int
   imagen String 
   categoria Categoria @relation( fields: [categoriaId], references: [id])
   categoriaId Int

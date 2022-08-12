@@ -8,8 +8,7 @@ export default function Total() {
     const { pedido, nombre, setNombre, colocarOrden, total } = useComandera()
 
     const comprobarPedido = useCallback(() => {
-        return pedido.length === 0 || nombre === '' || nombre.length < 3
-    }, [pedido, nombre])
+        return pedido.length === 0 || nombre === '' || nombre.length < 3  }, [pedido, nombre])
 
     useEffect(() => {
         comprobarPedido()
