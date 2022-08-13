@@ -11,7 +11,7 @@ const Sidebar = () => {
         <Image 
             width={300} 
             height={200} 
-            src="/assets/img/logo.jpeg" 
+            src="/assets/img/logo.png" 
             alt="imagen logo"
         />
 
