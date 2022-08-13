@@ -44,7 +44,7 @@ const ModalProducto = () => {
               <h1 className="text-3xl font-bold mt-5">{producto.nombre}</h1>  
             </div>
             
-        </div>
+       
         <p className="mt-5 font-black text-5xl text-amber-500
         ">{formatearDinero(producto.precio)}</p>
 
@@ -81,6 +81,7 @@ const ModalProducto = () => {
             {edicion ? 'Guardar Cambios' : 'Añadir al Pedido'}
         </button>
     </div>
+     </div>
   )
 }
 
